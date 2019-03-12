@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+<meta charset="UTF-8">
+<title>INGRESS 1.0 Registration</title>
+</head>
+
+
+<script type="text/javascript">
+function validatename()
+{
+var a = document.forms["formname"]["firstname"].value;
+if(a=="")
+{
+alert("Please Enter Your First Name");
+document.form.name.focus();
+return false;
+}
+if(!isNaN(a))
+{
+alert("Please Enter Only Characters");
+document.form.name.select();
+return false;
+}
+}
+function validatelname()
+{
+var a = document.forms["formname"]["lastname"].value;
+if(a=="")
+{
+alert("Please Enter Your Last Name");
+document.form.name.focus();
+return false;
+}
+if(!isNaN(a))
+{
+alert("Please Enter Only Characters");
+document.form.name.select();
+return false;
+}
+}
+function validatemail()
+{
+var a = document.forms["formname"]["Email ID"].value;
+if(a=="")
+{
+alert("Please Enter Your Email-id");
+document.form.name.focus();
+return false;
+}
+if(!isNaN(a))
+{
+alert("Please Enter Only Characters");
+document.form.name.select();
+return false;
+}
+}
+function validatephone()
+{
+var a = document.forms["formname"]["Contact no"].value;
+if(a=="")
+{
+alert("Please Enter Your 10-digit contact no.");
+document.form.name.focus();
+return false;
+}
+if(!isNaN(a))
+{
+alert("Please Enter Only Characters");
+document.form.name.select();
+return false;
+}
+}
+</script>
+<body>
+<style>
+body {
+
+        color: blue;
+}
+
+</style>
+ <body bgcolor="#00FA9A">
+ <div class="container col-lg-6 col-md-12">
+ 
+	<h1 align="center" style="color:red;font-family:;">I3 Lab- India's first High-end Digital Lab </h1>
+<h3>Register Your request for INGRESS 1.0 BOOTCAMP</h3><br>
+<img class="img-fluid" src="img_chania.jpg" alt="Chania">	
+<form name="formname">
+  
+  Test Score:<br>
+  <div class="form-group">
+  <label for=" Test Score">Select Score:</label>
+  <select class="form-control" id=" Test Score">
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    <option>14</option>
+	<option>15</option>
+    <option>16</option>
+    <option>17</option>
+    <option>18</option>
+	<option>19</option>
+    <option>20</option>
+    </select>
+</div>
+  
+<br>  
+  First name:<br>
+  <input type="text" name="firstname" id="fname" onblur="validatename()"><br>
+  <br>
+  Last name:<br> 
+  <input type="text" name="lastname" id="lname" onblur="validatelname()"><br>
+  <br>	
+  Gender:
+  <div class="form-check">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Male
+  </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Female
+  </label>
+</div>
+<div class="form-check disabled">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Other
+  </label>
+</div><br>
+<br>
+DOB:<br>	
+
+  Email ID:<br>
+  <input type="text" name="Email ID" id="email" onblur="validatemail()"><br>
+  <br>
+  Contact no:<br>
+  <input type="integer" name="Contact no" onblur="validatephone()"><br>
+  <br>
+  <br>
+  <input type="button" class="btn-primary" value="Submit" onclick="functionmy()">
+  
+  
+  
+</form>
+<div>
+</body>
+
+</html>
